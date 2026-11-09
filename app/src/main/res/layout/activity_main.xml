@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:columnCount="5"
+    android:rowCount="7"
+    android:padding="8dp"
+    android:useDefaultMargins="true"
+    android:background="#DCE6F2">
 
+    <!-- Ekranas -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1.5"
+        android:layout_columnSpan="5"
+        android:layout_columnWeight="1"
+        android:background="#FFFFFF"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="@string/txt_default_display"
+        android:textColor="#000000"
+        android:textSize="48sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <android.widget.Button android:id="@+id/btnMC" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="18sp" android:text="@string/btn_mc" />
+    <android.widget.Button android:id="@+id/btnMR" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="18sp" android:text="@string/btn_mr" />
+    <android.widget.Button android:id="@+id/btnMS" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="18sp" android:text="@string/btn_ms" />
+    <android.widget.Button android:id="@+id/btnMPlus" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="16sp" android:text="@string/btn_m_plus" />
+    <android.widget.Button android:id="@+id/btnMMinus" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="16sp" android:text="@string/btn_m_minus" />
+
+    <android.widget.Button android:id="@+id/btnBack" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="20sp" android:text="@string/btn_back" />
+    <android.widget.Button android:id="@+id/btnCE" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="18sp" android:text="@string/btn_ce" />
+    <android.widget.Button android:id="@+id/btnC" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="20sp" android:text="@string/btn_c" />
+    <android.widget.Button android:id="@+id/btnSign" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="20sp" android:text="@string/btn_sign" />
+    <android.widget.Button android:id="@+id/btnSqrt" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="20sp" android:text="@string/btn_sqrt" />
+
+    <android.widget.Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_7" />
+    <android.widget.Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_8" />
+    <android.widget.Button android:id="@+id/btn9" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_9" />
+    <android.widget.Button android:id="@+id/btnDivide" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_divide" />
+    <android.widget.Button android:id="@+id/btnPercent" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="20sp" android:text="@string/btn_percent" />
+
+    <android.widget.Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_4" />
+    <android.widget.Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_5" />
+    <android.widget.Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_6" />
+    <android.widget.Button android:id="@+id/btnMultiply" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_multiply" />
+    <android.widget.Button android:id="@+id/btnInverse" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="18sp" android:text="@string/btn_inverse" />
+
+    <android.widget.Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_1" />
+    <android.widget.Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_2" />
+    <android.widget.Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_3" />
+    <android.widget.Button android:id="@+id/btnMinus" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="24sp" android:text="@string/btn_minus" />
+    <android.widget.Button android:id="@+id/btnEqual" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="2" android:layout_rowSpan="2" android:layout_gravity="fill" android:textSize="24sp" android:text="@string/btn_equal" />
+    <android.widget.Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="2" android:layout_rowWeight="1" android:layout_columnSpan="2" android:layout_gravity="fill" android:textSize="22sp" android:text="@string/btn_0" />
+    <android.widget.Button android:id="@+id/btnDot" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="24sp" android:text="@string/btn_dot" />
+    <android.widget.Button android:id="@+id/btnPlus" android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_gravity="fill" android:textSize="24sp" android:text="@string/btn_plus" />
+
+</GridLayout>
